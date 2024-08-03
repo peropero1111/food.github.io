@@ -2,167 +2,202 @@
 <html lang="en">
 <head>
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            margin: 10;
-            padding: 10;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: whitesmoke;
             box-sizing: border-box;
+            overflow-x: hidden; /* 작은 스크린 기기 스크롤 기능 */
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 800px;
+            box-sizing: border-box;
+            overflow-x: auto; /* 작은 스크린 기기 스크롤 기능2 */
         }
         table {
             border-collapse: collapse;
-            width: 200%;
-            max-width: 1000px;
-            height: auto;
+            width: 100%;
+            max-width: 100%;
+            min-width: 600px; /* 가독성 보장을 위한 최소픽셀 */
             margin: 0 auto;
-            border: 1px solid blue;
+            border: 1px solid pink;
+            overflow-x: auto; 
         }
         th, td {
-            border: 1px solid blue;
-            padding: 30px;
+            border: 1px solid pink;
+            padding: 15px;
             text-align: center;
+            border-width: 2px;
         }
         th {
             background-color: #f2f2f2;
+            border-width: 2px;
         }
         @media (max-width: 600px) {
             th, td {
-                font-size: 200px;
-                padding: 14px;
+                font-size: 0.8em;
+                padding: 8px;
+            }
+            table {
+                min-width: 400px; /* 작은 화면 위하여 최소 크기*/
+            }
+        }
+        @media (max-width: 400px) {
+            th, td {
+                font-size: 0.7em;
+                padding: 6px;
+            }
+            table {
+                min-width: 300px; /* 작은 화면 위하여 최소 크기2 */
             }
         }
     </style>
 </head>
 <body>
-    <table>
-        <tr>
-          <th scope="col">7/1</th>
-          <th scope="col">7/2</th>
-          <th scope="col">7/3</th>
-          <th scope="col">7/4</th>
-          <th scope="col">7/5</th>
-          <th scope="col">7/6</th>
-        </tr>
-        <tr>
-          <td>중식1</td>
-          <td>중식2</td>
-          <td>중식3</td>
-          <td>중식4</td>
-          <td>중식5</td>
-          <td>중식6</td>
-        </tr>
-        <tr>
-          <td>석식1</td>
-          <td>석식2</td>
-          <td>석식3</td>
-          <td>석식4</td>
-          <td>석식5</td>
-          <td>석식6</td>
-        </tr>
-        <tr>
-            <th scope="col">7/7</th>
-            <th scope="col">7/8</th>
-            <th scope="col">7/9</th>
-            <th scope="col">7/10</th>
-            <th scope="col">7/11</th>
-            <th scope="col">7/12</th>
-        </tr>
-        <tr>
-            <td>중식1</td>
-            <td>중식2</td>
-            <td>중식3</td>
-            <td>중식4</td>
-            <td>중식5</td>
-            <td>중식6</td>
-        </tr>
-        <tr>
-            <td>석식1</td>
-            <td>석식2</td>
-            <td>석식3</td>
-            <td>석식4</td>
-            <td>석식5</td>
-            <td>석식6</td>
-        </tr>
-        <tr>
-            <th scope="col">7/13</th>
-            <th scope="col">7/14</th>
-            <th scope="col">7/15</th>
-            <th scope="col">7/16</th>
-            <th scope="col">7/17</th>
-            <th scope="col">7/18</th>
-        </tr>
-        <tr>
-            <td>중식1</td>
-            <td>중식2</td>
-            <td>중식3</td>
-            <td>중식4</td>
-            <td>중식5</td>
-            <td>중식6</td>
-        </tr>
-        <tr>
-            <td>석식1</td>
-            <td>석식2</td>
-            <td>석식3</td>
-            <td>석식4</td>
-            <td>석식5</td>
-            <td>석식6</td>
-        </tr>
-        <tr>
-            <th scope="col">7/19</th>
-            <th scope="col">7/20</th>
-            <th scope="col">7/21</th>
-            <th scope="col">7/22</th>
-            <th scope="col">7/23</th>
-            <th scope="col">7/24</th>
-        </tr>
-        <tr>
-            <td>중식1</td>
-            <td>중식2</td>
-            <td>중식3</td>
-            <td>중식4</td>
-            <td>중식5</td>
-            <td>중식6</td>
-        </tr>
-        <tr>
-            <td>석식1</td>
-            <td>석식2</td>
-            <td>석식3</td>
-            <td>석식4</td>
-            <td>석식5</td>
-            <td>석식6</td>
-        </tr>
-        <tr>
-            <th scope="col">7/25</th>
-            <th scope="col">7/26</th>
-            <th scope="col">7/27</th>
-            <th scope="col">7/28</th>
-            <th scope="col">7/29</th>
-            <th scope="col">7/30</th>
-        </tr>
-        <tr>
-            <td>중식1</td>
-            <td>중식2</td>
-            <td>중식3</td>
-            <td>중식4</td>
-            <td>중식5</td>
-            <td>중식6</td>
-        </tr>
-        <tr>
-            <td>석식1</td>
-            <td>석식2</td>
-            <td>석식3</td>
-            <td>석식4</td>
-            <td>석식5</td>
-            <td>석식6</td>
-        </tr>
-        <tr>
-            <th scope="col">7/31</th>
-        </tr>
-        <tr>
-            <td>중식1</td>
-        </tr>
-        <tr>
-            <td>석식1</td>
-        </tr>
-    </table>
+    <div class="container">
+        <table>
+            <tr>
+                <th scope="col">7/1</th>
+                <th scope="col">7/2</th>
+                <th scope="col">7/3</th>
+                <th scope="col">7/4</th>
+                <th scope="col">7/5</th>
+                <th scope="col">7/6</th>
+            </tr>
+            <tr>
+                <td>중식1</td>
+                <td>중식2</td>
+                <td>중식3</td>
+                <td>중식4</td>
+                <td>중식5</td>
+                <td>중식6</td>
+            </tr>
+            <tr>
+                <td>석식1</td>
+                <td>석식2</td>
+                <td>석식3</td>
+                <td>석식4</td>
+                <td>석식5</td>
+                <td>석식6</td>
+            </tr>
+            <tr>
+                <th scope="col">7/7</th>
+                <th scope="col">7/8</th>
+                <th scope="col">7/9</th>
+                <th scope="col">7/10</th>
+                <th scope="col">7/11</th>
+                <th scope="col">7/12</th>
+            </tr>
+            <tr>
+                <td>중식1</td>
+                <td>중식2</td>
+                <td>중식3</td>
+                <td>중식4</td>
+                <td>중식5</td>
+                <td>중식6</td>
+            </tr>
+            <tr>
+                <td>석식1</td>
+                <td>석식2</td>
+                <td>석식3</td>
+                <td>석식4</td>
+                <td>석식5</td>
+                <td>석식6</td>
+            </tr>
+            <tr>
+                <th scope="col">7/13</th>
+                <th scope="col">7/14</th>
+                <th scope="col">7/15</th>
+                <th scope="col">7/16</th>
+                <th scope="col">7/17</th>
+                <th scope="col">7/18</th>
+            </tr>
+            <tr>
+                <td>중식1</td>
+                <td>중식2</td>
+                <td>중식3</td>
+                <td>중식4</td>
+                <td>중식5</td>
+                <td>중식6</td>
+            </tr>
+            <tr>
+                <td>석식1</td>
+                <td>석식2</td>
+                <td>석식3</td>
+                <td>석식4</td>
+                <td>석식5</td>
+                <td>석식6</td>
+            </tr>
+            <tr>
+                <th scope="col">7/19</th>
+                <th scope="col">7/20</th>
+                <th scope="col">7/21</th>
+                <th scope="col">7/22</th>
+                <th scope="col">7/23</th>
+                <th scope="col">7/24</th>
+            </tr>
+            <tr>
+                <td>중식1</td>
+                <td>중식2</td>
+                <td>중식3</td>
+                <td>중식4</td>
+                <td>중식5</td>
+                <td>중식6</td>
+            </tr>
+            <tr>
+                <td>석식1</td>
+                <td>석식2</td>
+                <td>석식3</td>
+                <td>석식4</td>
+                <td>석식5</td>
+                <td>석식6</td>
+            </tr>
+            <tr>
+                <th scope="col">7/25</th>
+                <th scope="col">7/26</th>
+                <th scope="col">7/27</th>
+                <th scope="col">7/28</th>
+                <th scope="col">7/29</th>
+                <th scope="col">7/30</th>
+            </tr>
+            <tr>
+                <td>중식1</td>
+                <td>중식2</td>
+                <td>중식3</td>
+                <td>중식4</td>
+                <td>중식5</td>
+                <td>중식6</td>
+            </tr>
+            <tr>
+                <td>석식1</td>
+                <td>석식2</td>
+                <td>석식3</td>
+                <td>석식4</td>
+                <td>석식5</td>
+                <td>석식6</td>
+            </tr>
+            <tr>
+                <th scope="col">7/31</th>
+            </tr>
+            <tr>
+                <td>중식1</td>
+            </tr>
+            <tr>
+                <td>석식1</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
